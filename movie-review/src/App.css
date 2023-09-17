@@ -1,0 +1,94 @@
+.spooky{
+  font-family: "Creepster";
+  font-size: 3.5em;
+  color: rgba(126, 1, 1, 0.984);
+  text-align: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("/Users/amelia/Desktop/week14labs/movie-review/src/movie images/the_shining_by_jamesrandom.jpeg");
+  }
+  
+  /*Movie Card Components*/
+  .movie-card {
+    flex: 25%;
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px 0px rgba(2, 2, 2, 0.75);
+  }
+  
+  .movie-details {
+    font-size: small;
+  }
+  
+  .movie-title,
+  .movie-year {
+    text-align: center;
+  }
+  
+  .review-btn{
+    background-color: rgba(255, 77, 0, 0.729);
+    border: none;
+  }
+  
+  /*Review form Component*/
+  .reviews-modal .modal-content {
+    background-color: #94999d;
+    color: black;
+  }
+  
+  .my-modal {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-form {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .review-form input {
+    margin-bottom: 2em;
+    width: 50%;
+  }
+  
+  .form-button {
+    margin-top: 2em;
+    border-radius: 5px;
+    background-color: rgba(126, 1, 1, 0.984);
+    box-shadow: 2px 2px 2px 0px rgba(2, 2, 2, 0.75);
+    width: 100%;
+  }
+  
+  .review-items {
+    margin: 2em;
+    width: 100%;
+  }
+  
+  /*Stars*/
+  .stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  .star {
+    cursor: pointer;
+    transition: color 300ms;
+  }
+  
+  /*Responsive elements*/
+  @media (max-width: 1000px) {
+    .movie-card {
+      flex: 40%;
+    }
+  }
+  @media (max-width: 700px) {
+    .movie-card {
+      flex: 100%;
+    }
+  }
